@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <array>
 #include <memory>
+#include <unistd.h>
+#include <limits.h>
 using namespace std;
 
 /* TODO List;
@@ -81,6 +83,13 @@ promptHandling:
     else if (promptRes == "c.quit" || promptRes == "c.exit" || promptRes == "c.qx") {
         cout << "Thanks for using CAFFEsh!\n";
         return 0;
+    }
+    else if (promptRes.substr(0, 3) == "cd ") {
+        string newDir = promptRes.substr(3);
+        if (chdir(newDir.c_str()) != 0) {
+            perror("cd failed");
+        }
+        goto prompt;
     }
     else {
         string promptElseRes = promptRes;
