@@ -1,5 +1,5 @@
 # ☕CAFFEsh
-A shell enchanter, worse than [fish](), maybe better than [bash]()
+A shell enchanter, worse than [fish-shell](https://github.com/fish-shell/fish-shell) and also [bash](https://www.gnu.org/software/bash/)
 
 ## 📒Compiling
 * If you are using `gcc` to compile CAFFEsh, you'll need to parse the `-lstdc++` option (e.g. `gcc -o caffesh caffesh.cpp -lstdc++`)
