@@ -5,7 +5,7 @@ A shell enhancer, worse than [fish-shell](https://github.com/fish-shell/fish-she
 I personally recommend you to use the [installer](https://github.com/MaxWasTakenYT/CAFFEsh) which is (probably) easier, you can also compile the installer yourself using `gcc`
 ### 🍵Installing with `get-Csh` / Pros
 * You won't ever need to update `get-Csh` since it downloads files from the repository
-* If there's an update, you can click two buttons, and it will uninstall and reinstall CAFFEsh, without breaking anything
+* If there's an update for `CAFFEsh`, you can click install it in two clicks, without breaking anything
 
 ### 🤓Compiling yourself / Pros
 * Not many actually, you waste a bit of time too
