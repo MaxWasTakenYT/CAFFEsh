@@ -62,7 +62,7 @@ promptHandling:
 
         cout << "c.help : Lists available commands\n";
         cout << "c.settings / c.opts : *not implemented yet* Opens CAFFEsh's settings menu\n";
-        cout << "c.quit / c.exit / c.qx : Quits CAFFEsh";
+        cout << "c.quit / c.exit / c.qx : Quits CAFFEsh\n";
         cout << "lsd : Basically `ls -lah` :)\n";
 
         cout << "Note: CAFFEsh still does NOT support error handling\n";
@@ -83,7 +83,7 @@ promptHandling:
         return 0;
     }
     else {
-        string promptElseRes = "cd " + cdir + " && " + promptRes;
+        string promptElseRes = promptRes;
         system(promptElseRes.c_str());
         goto prompt;
     }
