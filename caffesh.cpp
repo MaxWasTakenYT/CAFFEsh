@@ -37,7 +37,7 @@ string getDir() {
 
 int main() {
     system("clear");
-    system("figlet CAFFEsh");
+    system("figlet CAFFE sh");
     cout << "\nRun \"c.help\" to list available commands\n\n";
 
 prompt:
@@ -47,14 +47,14 @@ prompt:
     // Checks if user is in /home (for aesthetics only)
     if (cdir.find("/home/") != string::npos) {
         cout << user << " at " << "~" << " :: ";
-        cin >> promptRes;
+        getline(cin, promptRes);
     }
     else {
         cout << user << " at " << cdir << " :: ";
-        cin >> promptRes;
+        getline(cin, promptRes);
     }
 
-  
+
 promptHandling:
     // Note: You are NOT ready for what you are going to see (a.k.a. the worst way to handle a prompt)
     if (promptRes == "c.help") {
@@ -83,7 +83,8 @@ promptHandling:
         return 0;
     }
     else {
-        cout << "[!] Error, please try updating CAFFEsh and try again later";
+        string promptElseRes = "cd " + cdir + " && " + promptRes;
+        system(promptElseRes.c_str());
         goto prompt;
     }
 }
