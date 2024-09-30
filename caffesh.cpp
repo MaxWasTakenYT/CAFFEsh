@@ -83,11 +83,7 @@ promptHandling:
         return 0;
     }
     else {
-        /* [!] NOTE:Since system() starts a process with every command, and I only had this idea to make this work,
-        you technically cannot execute `ls[dir]` but only `ls` and the current dir tree will display */
-        string promptElseRes = "cd " + cdir + " && " + promptRes;
-        cout << "Executing: " << promptElseRes << endl;
-        system(promptElseRes.c_str());
+        cout << "[!] Error, please try updating CAFFEsh and try again later";
         goto prompt;
     }
 }
