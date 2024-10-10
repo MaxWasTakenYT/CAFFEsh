@@ -1,5 +1,5 @@
 # ☕CAFFEsh
-A shell enhancer, worse than [fish-shell](https://github.com/fish-shell/fish-shell) and also [bash](https://www.gnu.org/software/bash/)
+A shell enhancer, worse than both [fish-shell](https://github.com/fish-shell/fish-shell) and [bash](https://www.gnu.org/software/bash/)
 
 ## 📒How to make yourself a CAFFEsh
 I personally recommend you to use the [installer](https://github.com/MaxWasTakenYT/CAFFEsh) which is (probably) easier, you can also compile the installer yourself using `gcc`
