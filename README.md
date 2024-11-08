@@ -1,4 +1,5 @@
 # ☕CAFFEsh
+### [n!] project abandoned and archived as of nov. 8, 2024
 A shell enhancer, worse than both [fish-shell](https://github.com/fish-shell/fish-shell) and [bash](https://www.gnu.org/software/bash/)
 
 ## 📒How to make yourself a CAFFEsh
